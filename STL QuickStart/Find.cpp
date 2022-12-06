@@ -12,9 +12,9 @@ int main()
   // Lenght of an array in c++
   int n = sizeof(arr) / sizeof(int);
 
-  int key = 5;
+  int ele = 5;
 
-  auto i = find(arr, arr + n, key);
+  auto i = find(arr, arr + n, ele);
   int index = i - arr; // if index == size of the array then the ele is not present in the array
                        // else it returns the index of the ele
 
@@ -25,7 +25,7 @@ int main()
 
   else
   {
-    cout << "The key is present at index : " << index << endl;
+    cout << "The ele is present at index : " << index << endl;
   }
 
   return 0;
