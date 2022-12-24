@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <iostream>
 #include <algorithm>
 
@@ -7,10 +6,18 @@ using namespace std;
 int main()
 {
 
-  int arr[] = {1, 2, 54, 3, 89, 3};
-
+  // For Binary Search the array needs to be sorted
+  int arr[] = {1, 2, 3, 54, 56};
   // Lenght of an array in c++
-  int n = sizeof(arr) / sizeof(int);
+
+  int x = sizeof(arr);
+  cout << "The Size of the array is " << x << endl;
+
+  int y = sizeof(int);
+  cout << "The size of int is " << y << endl;
+
+  int n = x / y;
+  cout << "The size of the array is " << n << endl;
 
   int ele;
   cin >> ele;
