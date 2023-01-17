@@ -40,15 +40,15 @@ int main()
     cin >> name >> age;
 
     Person p(name, age);
-    pq.push(p);
+    pq.push(p); //----------------> O(Log n)
   }
   int k = 3;
 
   for (int i = 0; i < k; i++)
   {
-    Person p = pq.top();
+    Person p = pq.top(); //--------->  O(1)
     cout << p.name << " " << p.age << endl;
-    pq.pop();
+    pq.pop(); //----------------> O(Log n)
   }
 
   return 0;
